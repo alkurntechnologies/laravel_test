@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Ayar';
+    src: url('Ayar.eot');
+    src: url('Ayar.eot?#iefix') format('embedded-opentype'),
+        url('Ayar.woff2') format('woff2'),
+        url('Ayar.woff') format('woff'),
+        url('Ayar.ttf') format('truetype'),
+        url('Ayar.svg#Ayar') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

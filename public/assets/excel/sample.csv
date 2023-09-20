@@ -1,0 +1,4 @@
+name,category,images,location,price,stock,low_stock,buy_america_compliant,product_type,description,specification,product_weight,product_length,product_width,product_height,buying_format,lead_time,auction,brand_name,state,country,freight_class,nmfc_code
+product 1,Equipment;Track,https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg,New York; NY; USA,200,100,10,yes,new,Soluta omnis atque a,https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg,11,11,11,11,Buy Now,1,yes,sample text,NY,USA,70,Ballast Plows - 165200
+product 2,Track,https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg,New York;NY; USA,100,200,20,no,used,Soluta omnis atque a,https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg,22,22,22,22,Buy Now,2,no,sample text,NY,USA,70,Ballast Plows - 165200
+Above are example please start your products from row 5,,,,,,,,,,,,,,,,,,,,

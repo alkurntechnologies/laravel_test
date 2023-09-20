@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://e-railspot.com/</loc>
+  <lastmod>2022-10-19T12:48:33+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://e-railspot.com/login</loc>
+  <lastmod>2022-10-19T12:48:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://e-railspot.com/signup/buyer</loc>
+  <lastmod>2022-10-19T12:48:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://e-railspot.com/signup/seller</loc>
+  <lastmod>2022-10-19T12:48:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://e-railspot.com/signup/shipper</loc>
+  <lastmod>2022-10-19T12:48:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://e-railspot.com/product-spot/product_spot</loc>
+  <lastmod>2022-10-19T12:48:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://e-railspot.com/product-spot/deal_spot</loc>
+  <lastmod>2022-10-19T12:48:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://e-railspot.com/product-spot/rfq_spot</loc>
+  <lastmod>2022-10-19T12:48:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://e-railspot.com/product-spot/shipping_spot</loc>
+  <lastmod>2022-10-19T12:48:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://e-railspot.com/about</loc>
+  <lastmod>2022-10-19T12:48:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://e-railspot.com/how-it-works</loc>
+  <lastmod>2022-10-19T12:48:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://e-railspot.com/contact</loc>
+  <lastmod>2022-10-19T12:48:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://e-railspot.com/privacy-policy</loc>
+  <lastmod>2022-10-19T12:48:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://e-railspot.com/terms-and-conditions</loc>
+  <lastmod>2022-10-19T12:48:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://e-railspot.com/forgot-password</loc>
+  <lastmod>2022-10-19T12:48:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://e-railspot.com/signup/index.html</loc>
+  <lastmod>2022-10-19T12:48:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+<url>
+  <loc>https://e-railspot.com/product-spot/index.html</loc>
+  <lastmod>2022-10-19T12:48:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+</urlset>
