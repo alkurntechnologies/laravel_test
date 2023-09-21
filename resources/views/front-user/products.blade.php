@@ -21,7 +21,7 @@
     <div class="container">
         <div class="row">
             
-            <div class="col-md-9 p-0"> 
+            <div class="col-md-12"> 
                 @include('front-user.product-list')
             </div>
         </div>

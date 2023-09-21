@@ -36,7 +36,7 @@
                     }
 
                 ?>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 d-flex p-0">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex">
                         <div class="productShow">
                             <div class="count-box-second">
                                 <a href="{{url('product-detail/'.$row->id)}}">
@@ -71,6 +71,7 @@
                                         <i class="fi fi-sr-star"></i>
                                         <i class="fi fi-sr-star"></i>
 
+                                    </div>
                                 </div>
                                 
                                 <div class="btnDiv">

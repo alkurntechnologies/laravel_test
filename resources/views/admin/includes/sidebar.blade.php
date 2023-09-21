@@ -3,8 +3,8 @@
     <aside id="main-sidebar" class="main-sidebar sidebar-dark-primary elevation-4 sidebarSmal">
         <!-- Brand Logo -->
         <a href="{{url('/')}}" class="brand-link">
-            <img loading="lazy" src="{{asset('/assets/admin/img/AdminLTELogo.png')}}" class="brand-image img-circle elevation-3"
-                style="opacity: .8">
+            {{-- <img loading="lazy" src="{{asset('/assets/admin/img/AdminLTELogo.png')}}" class="brand-image img-circle elevation-3"
+                style="opacity: .8"> --}}
             <span class="brand-text font-weight-light">{{config('app.name')}} | Admin</span>
         </a>
 

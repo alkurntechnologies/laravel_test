@@ -41,7 +41,9 @@
                                 <label class="form-check-label" for="exampleCheck1">Remember me</label>
                                 
                             </div> -->
-                            <button type="submit" class="blueBtn">Sign in</button>
+                            <div class="text-center">
+                                <button type="submit" class="blueBtn">Sign in</button>
+                            </div>
                         </form>
                     </div>
                     <p class="orText">OR</p>

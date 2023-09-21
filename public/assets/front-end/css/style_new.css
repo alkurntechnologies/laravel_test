@@ -3070,10 +3070,10 @@ label {
     line-height: 18px;
     letter-spacing: 0px;
     color: #000000;
-    height: 55px;
+    height: 40px;
     font-size: 12pt;
     padding: 5px 37px 5px 10px;
-    border-radius: 10px;
+    border-radius: 7px;
     background-repeat: no-repeat !important;
     background-position: right 7px center !important;
     background-size: 23px !important;
@@ -3126,7 +3126,7 @@ span.passView.toggle-password {
     color: #000;
     position: absolute;
     right: 13px;
-    top: 13px;
+    top: 6px;
     cursor: pointer;
     font-size: 23px;
 }
@@ -3790,6 +3790,8 @@ div.tab-content .tab-pane.hideShadow {
     width: 98px;
     height: 81px;
     float: left;
+    border: solid 1px #dddddd;
+    margin-right: 11px;
 }
 
 .itemImage img,
@@ -3865,6 +3867,7 @@ span.cartTopPrice {
 
 .d-md-table-cell:first-child {
     padding-left: 0;
+    width: 339px;
 }
 
 .d-md-table-cell:last-child {
@@ -3942,16 +3945,16 @@ i.fas.fa-trash {
 
 .btnLink {
     letter-spacing: 0.8px;
-    padding: 15px 33px;
+    padding: 8px 22px;
     border: 0;
     transition: all 0.3s;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     color: #ffffff;
     text-transform: none;
-    border-radius: 15px;
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
     background: #000000;
     line-height: 1.8;
     width: auto;
@@ -7455,14 +7458,10 @@ input:not(:placeholder-shown)~.inputName {
     color: #212529 !important;
 }
 
-.shipping-address-section {
-    display: flex;
-}
-
 .shipping-address-section-content {
     flex: 0 0 calc(50% - 70px);
     min-width: calc(50% - 70px);
-    padding-right: 10px;
+    padding-right: 0;
 }
 
 .shipping-address-section-taxsection {
@@ -9724,4 +9723,162 @@ h3.product-name {
     font-weight: 800;
     margin: 7px 0 0;
     line-height: normal;
+}
+.product-detail-cnt {
+    display: flex;
+}
+
+.prd-name {
+    display: flex;
+    flex-direction: column;
+}
+
+span.detail-explain {
+    font-size: 12px;
+    line-height: normal;
+}
+
+.prd-name span.location {
+    font-size: 16px;
+    color: #000;
+}
+
+.remove-prd {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.remove-prd i {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    font-size: 24px;
+    color: red;
+}
+.cartTable .d-md-table-cell:nth-child(3) {
+    width: 122px;
+}
+.price .location {
+    font-size: 16px;
+    color: #000;
+}
+
+.cartTable .d-md-table-cell:nth-child(4) {
+    text-align: right;
+}
+.chekoutdataOne .cartTable {
+    margin-bottom: 10px;
+    margin-top: 16px;
+}
+
+.form-outline.flex-fill {
+    display: flex;
+    width: 269px;
+}
+
+.cart-other-sec {
+    display: flex;
+    padding-right: 30px;
+}
+
+.cart-other-right {
+    margin-left: auto;
+    margin-top: auto;
+}
+
+button.update-button {
+    letter-spacing: 0.8px;
+    padding: 8px 22px;
+    border: 0;
+    transition: all 0.3s;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: none;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    background: #000000;
+    line-height: 1.8;
+    width: auto;
+    text-align: center;
+    margin-top: 0;
+    display: inline-block;
+}
+
+.form-outline.flex-fill .form-control {
+    margin-right: 18px;
+}
+
+.totals {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    padding-right: 30px;
+}
+
+.totals-item {
+    width: 231px;
+    margin-left: auto;
+    display: flex;
+    font-size: 16px;
+    color: #000;
+    line-height: 32px;
+}
+
+.totals-item div.totals-value {
+    margin-left: auto;
+}
+
+.totals-item label {
+    font-size: 16px;
+    color: #000;
+}
+
+.totals-item div.totals-value {
+    font-weight: 600;
+}
+
+button.checkout {
+    margin-left: auto;
+    float: right;
+    letter-spacing: 0.8px;
+    padding: 8px 22px;
+    border: 0;
+    transition: all 0.3s;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: none;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    background: #000000;
+    line-height: 1.8;
+    width: auto;
+    text-align: center;
+    margin-top: 25px;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.shipping-address-section {
+    background: #000;
+    border-radius: 20px;
+    padding: 16px;
+}
+
+.shipping-address-section .lcTitle {
+    color: #fff;
+}
+
+.chekoutdataOne {
+    padding-right: 30px;
+}
+
+.totals-item.totals-item-total {
+    border-top: solid 2px;
+    padding: 12px 0 0;
 }
