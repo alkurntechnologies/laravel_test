@@ -3,7 +3,7 @@
 	   style="box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';background-color:#edf2f7;margin:0;padding:0;width:100%;background:#ffffff">
 	<tr class="">
 		<td style=" padding-bottom:30px;">
-			<p style="box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-size:18px;font-weight:700;background-color:#edf2f7;margin:0;padding:0;width:100%;background:#ffffff;text-transform:uppercase;padding-bottom:10px;">e-railspot</p>
+			<p style="box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-size:18px;font-weight:700;background-color:#edf2f7;margin:0;padding:0;width:100%;background:#ffffff;text-transform:uppercase;padding-bottom:10px;">DEMO</p>
 			<p style="box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';background-color:#edf2f7;margin:0;padding:0;width:100%;background:#ffffff;color: #4E4D4D;padding-bottom:5px;font-size:14px;width:200px">
 				14090 Southwest Fwy Sugar Land, TX 77478<br />
 				US
@@ -12,7 +12,7 @@
 				+1 2813823321
 			</p>
 			<p style="box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';background-color:#edf2f7;margin:0;padding:0;width:100%;background:#ffffff;color: #4E4D4D;padding-bottom:5px;font-size:14px;">
-				tim@e-railspot.com
+				tim@DEMO.com
 			</p>
 			<p style="box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';background-color:#edf2f7;margin:0;padding:0;width:100%;background:#ffffff;color: #4E4D4D;padding-bottom:5px;font-size:14px;">
 				{{url('/')}}
@@ -179,7 +179,7 @@
 	</tr>
 	<tr>
 		<td style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-size: 12px;color: #4E4D4D;text-align: center;padding-top:30px;">
-			<p style="text-align: center; width: 100%; margin:0;display: inline-block;"><a href="{{ url('/') }}" style="color: #0032A0;text-decoration: none;">E-Railspot</a></p><br><br>
+			<p style="text-align: center; width: 100%; margin:0;display: inline-block;"><a href="{{ url('/') }}" style="color: #0032A0;text-decoration: none;">DEMO</a></p><br><br>
 		</td>
 	</tr>
 </table>

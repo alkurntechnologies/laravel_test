@@ -49,13 +49,13 @@ class addNewBuyer extends Notification
         return (new MailMessage)
             ->greeting('Hello, ' . ucfirst($this->user->first_name) . ' ' . ucfirst($this->user->last_name))
             ->subject(config('app.name').' - Account Created')
-            ->line('Thank you for signing up to our E-Railspot platform. You are receiving this email because you or someone within your organization wants to begin using your Free account. You will now receive Requests for Quotations to this inbox, which will allow you to bid on requests posted by Buyers seeking goods or services through our on-line procurement tool. You will receive an email notification anytime there is an RFQ for goods and/or services that match your company’s portfolio.')
+            ->line('Thank you for signing up to our DEMO platform. You are receiving this email because you or someone within your organization wants to begin using your Free account. You will now receive Requests for Quotations to this inbox, which will allow you to bid on requests posted by Buyers seeking goods or services through our on-line procurement tool. You will receive an email notification anytime there is an RFQ for goods and/or services that match your company’s portfolio.')
             ->line('You will also have access to list products for sale, create requests for shipping to hundreds of brokers, and add your products to our on-line catalog for the industry to see. All of this is Free to you!')
-            ->line('Feel free to familiarize yourself with your dashboard, and feel free to reach out if you have any questions! Welcome to the E-Railspot community.')
+            ->line('Feel free to familiarize yourself with your dashboard, and feel free to reach out if you have any questions! Welcome to the DEMO community.')
             ->action('Login', url('login'))
             ->line('Email: '.$this->user->email)
             ->line('Password: '.$this->password)
-            ->line('Thank you for choosing E-Railspot!');
+            ->line('Thank you for choosing DEMO!');
     }
 
     /**

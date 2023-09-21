@@ -5,88 +5,88 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>https://e-railspot.com/</loc>
+  <loc>https://DEMO.com/</loc>
   <lastmod>2022-10-19T12:48:33+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://e-railspot.com/login</loc>
+  <loc>https://DEMO.com/login</loc>
   <lastmod>2022-10-19T12:48:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://e-railspot.com/signup/buyer</loc>
+  <loc>https://DEMO.com/signup/buyer</loc>
   <lastmod>2022-10-19T12:48:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://e-railspot.com/signup/seller</loc>
+  <loc>https://DEMO.com/signup/seller</loc>
   <lastmod>2022-10-19T12:48:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://e-railspot.com/signup/shipper</loc>
+  <loc>https://DEMO.com/signup/shipper</loc>
   <lastmod>2022-10-19T12:48:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://e-railspot.com/product-spot/product_spot</loc>
+  <loc>https://DEMO.com/product-spot/product_spot</loc>
   <lastmod>2022-10-19T12:48:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://e-railspot.com/product-spot/deal_spot</loc>
+  <loc>https://DEMO.com/product-spot/deal_spot</loc>
   <lastmod>2022-10-19T12:48:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://e-railspot.com/product-spot/rfq_spot</loc>
+  <loc>https://DEMO.com/product-spot/rfq_spot</loc>
   <lastmod>2022-10-19T12:48:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://e-railspot.com/product-spot/shipping_spot</loc>
+  <loc>https://DEMO.com/product-spot/shipping_spot</loc>
   <lastmod>2022-10-19T12:48:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://e-railspot.com/about</loc>
+  <loc>https://DEMO.com/about</loc>
   <lastmod>2022-10-19T12:48:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://e-railspot.com/how-it-works</loc>
+  <loc>https://DEMO.com/how-it-works</loc>
   <lastmod>2022-10-19T12:48:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://e-railspot.com/contact</loc>
+  <loc>https://DEMO.com/contact</loc>
   <lastmod>2022-10-19T12:48:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://e-railspot.com/privacy-policy</loc>
+  <loc>https://DEMO.com/privacy-policy</loc>
   <lastmod>2022-10-19T12:48:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://e-railspot.com/terms-and-conditions</loc>
+  <loc>https://DEMO.com/terms-and-conditions</loc>
   <lastmod>2022-10-19T12:48:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://e-railspot.com/forgot-password</loc>
+  <loc>https://DEMO.com/forgot-password</loc>
   <lastmod>2022-10-19T12:48:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://e-railspot.com/signup/index.html</loc>
+  <loc>https://DEMO.com/signup/index.html</loc>
   <lastmod>2022-10-19T12:48:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
 <url>
-  <loc>https://e-railspot.com/product-spot/index.html</loc>
+  <loc>https://DEMO.com/product-spot/index.html</loc>
   <lastmod>2022-10-19T12:48:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>

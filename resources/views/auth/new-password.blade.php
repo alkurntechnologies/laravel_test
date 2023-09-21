@@ -2,10 +2,10 @@
 
 @section('content')
 <section class="loginSection">
+    <div class="logImgBox">
+        <img loading="lazy" src="{{ asset('/') }}/assets/front-end/images/auth_bg_imge.jpg" alt="">
+    </div>
     <div class="container">
-        <div class="logImgBox">
-            <img loading="lazy" src="{{ asset('/') }}/assets/front-end/images/auth_bg_imge.jpg" alt="">
-        </div>
         <div class="logForm">
             <div class="loginBox">
                 <h3>Set New Password</h3>

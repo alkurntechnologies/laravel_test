@@ -4,7 +4,7 @@
 <?php 
 $formData = Session::get('formData');
 ?>
-<section class="cartPage">
+<section class="cartPage py-4">
     <div class="container">
         <div class="row">
         @if(count($cartDetails) > 0)

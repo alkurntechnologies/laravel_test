@@ -120,7 +120,7 @@
                                                                                                                         Thank you for
                                                                                                                         your order and
                                                                                                                         for choosing
-                                                                                                                        E-Railspot!</p>
+                                                                                                                        DEMO!</p>
                                                                                                                 <p
                                                                                                                         style="box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-size:15px;line-height:1.5em;margin-top:0;text-align:left">
                                                                                                                         Regards,<br>

@@ -53,7 +53,7 @@ class sendPasswordLink extends Notification
                     ->line('It seems like you have forgot your password for '.config('app.name').'. Click the link below and you\'ll be redirected to a secure site from which you can set a new password.')
                     ->action('Reset Password', url('/password/reset/'.$this->token))
                     ->line('If you did not forgot your password you can safely ignore this email.')
-                    ->line('Thank you for choosing E-Railspot!');
+                    ->line('Thank you for choosing DEMO!');
     }
 
     /**

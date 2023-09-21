@@ -64,7 +64,7 @@ class OrderPlacedCustomer extends Notification
            }
             
 
-            $mail->line('Thank you for your order and for choosing E-Railspot!');
+            $mail->line('Thank you for your order and for choosing DEMO!');
 
             return $mail;
     }

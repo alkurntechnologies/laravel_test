@@ -27,7 +27,7 @@ if(Auth::check()){
 }
 
 ?>
-<section class="prodctDetail">
+<section class="prodctDetail py-4">
     <div class="container">
         <div class="row">
             <div class="col-md-8">

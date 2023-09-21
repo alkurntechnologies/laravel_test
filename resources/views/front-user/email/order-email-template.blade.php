@@ -28,18 +28,18 @@
                             <tbody>
                                 <tr>
                                     <td style="font-family: 'Ayar';max-width900px;margin:0 auto;">
-                                        <strong>E-RAILSPOT</strong>
+                                        <strong>DEMO</strong>
                                         <p style="margin: 0;font-size: 12px;line-height: 18px;margin-top: 11px;">
                                             14090 Southwest Fwy<br>
                                             Sugar Land, TX 77478 US<br>
                                             +1 2813823321<br>
-                                            tim@e-railspot.com<br>
-                                            https://e-railspot.com<br>
+                                            tim@DEMO.com<br>
+                                            https://DEMO.com<br>
                                         </p>
                                     </td>
                                     <td
                                         style="font-family: 'Ayar';max-width900px;margin:0 auto;vertical-align: middle; text-align:right">
-                                        <img src="https://e-railspot.com/assets/front-end/images/new-logo-black.png"
+                                        <img src="https://DEMO.com/assets/front-end/images/new-logo-black.png"
                                             style="width: 209px;">
                                     </td>
                                 </tr>

@@ -3,10 +3,10 @@
 @section('content')
 
 <section class="loginSection">
+    <div class="logImgBox">
+        <img loading="lazy" src="{{ asset('/') }}/assets/front-end/images/new-banner.jpeg" alt="">
+    </div>
     <div class="container">
-        <div class="logImgBox">
-            <img loading="lazy" src="{{ asset('/') }}/assets/front-end/images/new-banner.jpeg" alt="">
-        </div>
         <div class="logForm">
             <div class="instructionText">
                 Fields marked with an <span class="color-red">*</span> are required

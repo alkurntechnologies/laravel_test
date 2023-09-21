@@ -16,14 +16,14 @@
 
 <main id="main">
 
-<!-- ======= exolor link Section ======= -->
-<section id="about" class="about">
-    <div class="container" data-aos="fade-up">
-        <div class="menuExplor">
-            
+    <!-- ======= exolor link Section ======= -->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+            <div class="menuExplor">
+                
+            </div>
         </div>
-    </div>
-</div><!-- exolor link Section -->
+    </div><!-- exolor link Section -->
 
 
 

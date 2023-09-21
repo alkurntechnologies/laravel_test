@@ -13,7 +13,7 @@
         </select>
     </div>
 </div>  -->
-<div class="products">
+<div class="products py-4">
     <div id="pageLoader" style="display:none;">
         <img loading="lazy" src="{{ asset('/') }}assets/front-end/images/loading-image.gif" alt="">
         
@@ -36,57 +36,52 @@
                     }
 
                 ?>
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12 d-flex p-0">
-                    <div class="productShow">
-                        <div class="count-box-second">
-                            <a href="{{url('product-detail/'.$row->id)}}">
-                                <div class="ContentImageSecond">
-                                    @if($row->images)
-                                         
-                                        @php
-                                            $extension = pathinfo($row->images, PATHINFO_EXTENSION); 
-                                        @endphp
-                                        @if($extension == 'mp4' || $extension == 'mkv' || $extension == 'webm' || $extension == 'mov')
-                                            <video src="{{url('storage/app').'/'.$row->images}}" controls="" width="60" height="60"></video>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 d-flex p-0">
+                        <div class="productShow">
+                            <div class="count-box-second">
+                                <a href="{{url('product-detail/'.$row->id)}}">
+                                    <div class="ContentImageSecond">
+                                        @if($row->images)
+                                            
+                                            @php
+                                                $extension = pathinfo($row->images, PATHINFO_EXTENSION); 
+                                            @endphp
+                                            @if($extension == 'mp4' || $extension == 'mkv' || $extension == 'webm' || $extension == 'mov')
+                                                <video src="{{url('storage/app').'/'.$row->images}}" controls="" width="60" height="60"></video>
+                                            @else
+                                                <img loading="lazy" id="id2" src="{{url('storage/app').'/'.$row->images}}" width="60"  height="60" onerror="this.onerror=null;this.src='{{ asset('/') }}assets/front-end/images/trainImage.jpg'">
+                                            @endif
+
                                         @else
-                                            <img loading="lazy" id="id2" src="{{url('storage/app').'/'.$row->images}}" width="60"  height="60" onerror="this.onerror=null;this.src='{{ asset('/') }}assets/front-end/images/trainImage.jpg'">
+                                        <img loading="lazy" src="{{ asset('/') }}assets/front-end/images/trainImage.jpg" width="60" onerror="this.onerror=null;this.src='{{ asset('/') }}assets/front-end/images/trainImage.jpg'">
                                         @endif
-
-                                    @else
-                                    <img loading="lazy" src="{{ asset('/') }}assets/front-end/images/trainImage.jpg" width="60" onerror="this.onerror=null;this.src='{{ asset('/') }}assets/front-end/images/trainImage.jpg'">
-                                    @endif
-                                </div>
-                            </a>
-                        
-                            <div class="ContentContentSecond">
-                                <div class="TotalProduct">
-                                    ${{  ($row->price>0)?number_format($row->price,2):$row->price }}  
-                                </div>
-                                
-                                <div class="reviewCount">
+                                    </div>
+                                </a>
+                            
+                                <div class="ContentContentSecond">
+                                    <h3 class="product-name">{{$row->name}}</h3>
+                                    <div class="TotalProduct">
+                                        ${{  ($row->price>0)?number_format($row->price,2):$row->price }}  
+                                    </div>
                                     
+                                    <div class="reviewCount">                                        
                                         <i class="fi fi-sr-star"></i>
                                         <i class="fi fi-sr-star"></i>
                                         <i class="fi fi-sr-star"></i>
                                         <i class="fi fi-sr-star"></i>
                                         <i class="fi fi-sr-star"></i>
-
-                                ?>
-
-                                </div>
-                                
-                                <div class="btnDiv">
-                               
-                                    <a href="javascript:void(0)" onclick="addToCart({{$row->id}});" class="cartBtns">
-                                        <span id="removeCart{{$row->id}}" style={{$style}} > Remove from cart </span>
-                                        <span id="cart{{$row->id}}" style={{$nstyle}} > Add to cart </span>
-                                    </a>
+                                    </div>
                                     
+                                    <div class="btnDiv">                                
+                                        <a href="javascript:void(0)" onclick="addToCart({{$row->id}});" class="cartBtns">
+                                            <span id="removeCart{{$row->id}}" style={{$style}} > Remove from cart </span>
+                                            <span id="cart{{$row->id}}" style={{$nstyle}} > Add to cart </span>
+                                        </a>                                        
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 @endforeach
             @else
 
