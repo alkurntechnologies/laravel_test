@@ -95,7 +95,8 @@ class LoginController extends Controller
     public function forgetPassword(Request $request)
     {
         $request->validate(['email' => ['required', 'email']]);
-        if ($user = User::where('email', $request->email)->where('user_type','!=','admin')->first()) {
+        $user = User::where('email', $request->email)->first();
+        if ($user->roles()->where('name', '!=', 'admin')->first()) {
             $token = str_random(60);
             $password_reset_user = DB::table('password_resets')
                 ->where('email', $request->email)

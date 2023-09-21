@@ -48,7 +48,7 @@ class sendPasswordLink extends Notification
     {
 
         return (new MailMessage)
-                    ->greeting('Dear ' . ucfirst($this->user->first_name) . ' ' . ucfirst($this->user->last_name))
+                    ->greeting('Dear ' . ucfirst($this->user->name))
                     ->subject(config('app.name').' - Forget Password')
                     ->line('It seems like you have forgot your password for '.config('app.name').'. Click the link below and you\'ll be redirected to a secure site from which you can set a new password.')
                     ->action('Reset Password', url('/password/reset/'.$this->token))

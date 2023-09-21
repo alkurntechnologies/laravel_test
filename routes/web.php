@@ -59,7 +59,7 @@ Route::middleware('auth')->group(function () {
     
         Route::get('/notifications', 'UserController@notifications');
           
-    Route::get('/change-password', function () {return view('front-user.common.change-password');});
+    Route::get('/change-password', function () {return view('front-user.change-password');});
     Route::post('/change-password', 'UserController@changePassword');
 
     Route::get('/my-profile', 'UserController@myProfile');
