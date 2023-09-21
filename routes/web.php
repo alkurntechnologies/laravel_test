@@ -44,8 +44,8 @@ Route::get('/password/reset/{token}', function ($token) {
 Route::post('/password/reset/{token}', 'Auth\LoginController@updateForgotPassword');
 
 //social login
-Route::get('login/{provider?}', 'Auth\RegisterController@redirectToProvider');
-Route::get('callback/{provider}', 'Auth\RegisterController@handleProviderCallback');
+// Route::get('login/{provider?}', 'Auth\RegisterController@redirectToProvider');
+// Route::get('callback/{provider}', 'Auth\RegisterController@handleProviderCallback');
 
 Route::post('/add-to-cart', 'CartController@addToCart');
 Route::post('/update-cart', 'CartController@updateCart');
@@ -59,7 +59,7 @@ Route::middleware('auth')->group(function () {
     
         Route::get('/notifications', 'UserController@notifications');
           
-    Route::get('/change-password', function () {return view('front-user.common.change-password');});
+    Route::get('/change-password', function () {return view('front-user.change-password');});
     Route::post('/change-password', 'UserController@changePassword');
 
     Route::get('/my-profile', 'UserController@myProfile');

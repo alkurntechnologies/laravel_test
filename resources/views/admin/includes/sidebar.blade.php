@@ -24,7 +24,7 @@
                     <img loading="lazy" src="<?php echo ($src); ?>" class="img-circle elevation-2" id="adminProfileImgSidebar">
                 </div>
                 <div class="info">
-                    <a href="#" class="d-block">{{ ucfirst(Auth::User()->first_name)}} {{ucfirst(Auth::User()->last_name)}}</a>
+                    <a href="#" class="d-block">{{ ucfirst(Auth::User()->name)}}</a>
                 </div>
             </div>
 
@@ -55,7 +55,7 @@
                             <li class="nav-item">
                                 <a href="{{URL::to('admin/manage-buyers')}}" class="nav-link {{ URL::to('admin/manage-buyers') == url()->current() || URL::to('admin/add-buyer') == url()->current() || URL::to('admin/edit-buyer').'/'.collect(request()->segments())->last() == url()->current() ? 'active' : ' ' }}">
                                 <i class="fas fa-user-alt"></i> 
-                                    <p>Manage Buyer</p>
+                                    <p>Manage User</p>
                                 </a>
                             </li>
                         </ul>

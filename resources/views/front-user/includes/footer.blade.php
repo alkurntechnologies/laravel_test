@@ -46,11 +46,8 @@
                     <div class="row">
                         <div class="col-md-3 col-6">
                             <ul>
-                                <li class="active"><a href="#">Home</a></li>
-                                <li class=""><a href="#">About us</a></li>
-                                <li class=""><a href="#">Shop</a></li>
-                                <li class=""><a href="#">How it works</a></li>
-                                <li class=""><a href="#">Contact us</a></li>
+                                <li class="{{url('')==url()->current()?'active':''}}"><a href="{{url('')}}">Home</a></li>
+                                <li class="{{url('product-list')==url()->current()?'active':''}}"><a href="{{url('product-list')}}">Shop</a></li>
                             </ul>
                         </div>
                         @if(!Auth::check())

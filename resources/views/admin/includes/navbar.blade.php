@@ -33,7 +33,7 @@
                     </li>
                     <li class="nav-item d-none d-sm-inline-block">
 
-                        Welcome <strong>{{Auth::user()->first_name.' '.Auth::user()->last_name}}</strong>
+                        Welcome <strong>{{Auth::user()->name}}</strong>
 
 
                     </li>

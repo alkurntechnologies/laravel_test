@@ -58,7 +58,7 @@
                         <a  class="linkedin socialConectLink" data-href="{{url('login/linkedin')}}" data-bs-toggle="modal" data-bs-target="#exampleModal"><img loading="lazy" src="{{ asset('/') }}/assets/front-end/images/social_linkedin.png" alt=""></a><br/> -->
     
                     </div>
-                    <div class="lbBtmTxt">Don't have an account? <a href="{{url('signup/buyer')}}">create one</a></div>
+                    <div class="lbBtmTxt">Don't have an account? <a href="{{url('signup')}}">create one</a></div>
     
 
                     <!-- Modal -->

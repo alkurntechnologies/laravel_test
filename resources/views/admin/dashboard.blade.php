@@ -20,7 +20,7 @@
                             <div class="inner">
                                 <h3>{{$count->buyers}}</h3>
 
-                                <p>Total Buyers</p> 
+                                <p>Total Users</p> 
                             </div>
                             <div class="icon">
                                 <i class="ion ion-person-add"></i>

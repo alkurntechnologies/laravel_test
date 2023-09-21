@@ -4,53 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
-use App\Models\UserCertificate;
 use App\Models\Product;
-use App\Models\ProductCategory;
-use App\Models\StripeAccount;
-use App\Models\UserMembershipPlan;
-use App\Models\ShipperRfq;
-use App\Models\ShipperRfqImage;
-use App\Models\ShipperRfqDocument;
-use App\Models\ShipperRfqRequest;
-use App\Models\ShipperRfqResponse;
-use App\Models\AuctionLot;
-use App\Models\AuctionBid;
-use App\Models\AuctionImage;
-use App\Models\QbWebhook;
-use App\Models\SeoContent;
 use Auth;
 use Hash;
 use File;
 use DB;
 use Str;
 use Stripe;
-use App\Models\AdminCommission;
-use App\Models\Rfq;
-use App\Models\FavoriteProduct;
-use App\Models\FavoriteShipper;
-use App\Models\RatingReviewProduct;
-use App\Models\RatingReviewShipper;
-use App\Models\RatingReviewSeller;
 use App\Models\Order;
 use App\Models\OrderProduct;
-use App\Models\SellerRfqRespond;
-use App\Models\ChatMessage;
-use App\Imports\SellerProductsImport;
 use Maatwebsite\Excel\Facades\Excel;
-use Newsletter;
 use Mail;
-use App\Notifications\PasswordChanged; 
-use App\Notifications\RfqToSellers; 
-use App\Notifications\ProductReviewRatingNotification;
-use App\Notifications\ShipperReviewRatingNotification;
-use App\Notifications\SellerReviewRatingNotification;
-use App\Notifications\OrderStatusChangedNotification;
-use App\Notifications\RfqStatusChangedNotification;
-use App\Notifications\RfqRespondNotification;
-use App\Notifications\BidPlacedNotification;
-use App\Notifications\BuyerContactAdmin;
-use App\Notifications\QuotationRejection;
 use Session;
 use Carbon\Carbon;
 use App\Models\Company;
@@ -58,13 +22,6 @@ use App\Models\ShippingMethod;
 use App\Models\SubscriptionPlan;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Client;
-use App\Models\NmfcCode;
-use App\Models\UserCred;
-use App\Models\RfqProducts;
-use App\Models\State;
-use App\Models\UserInquiry;
-use App\Notifications\InquiryFromBuyerNotification;
-use App\Notifications\InquiryReplyFromSellerNotification;
 
 class UserController extends Controller
 {
@@ -94,7 +51,6 @@ class UserController extends Controller
                 $password_updated = $user->update(['password' => Hash::make($request->password)]);
 
                 if ($password_updated) {
-                    $user->notify(new PasswordChanged($user));
                     return back()->with(['success' => 'Password is changed successfully.!']);
                 } else {
                     return back()->with(['error' => 'There is an error while changing the password please try again later.!']);
@@ -138,161 +94,7 @@ class UserController extends Controller
 
     }
 
-    public function subscribeNewsletter(Request $request)
-    {
-        //    dd($request->all());
-
-            // if($request->first_name!='')
-            // {
-            //     $name = explode(' ', $request->first_name);
-            //     $fname = $name[0];
-            //     if(isset($name[1]))
-            //         $lname = $name[1];
-            //     else
-            //         $lname = '';
-            // }
-            // else
-            // {
-            //     $fname = '';
-            //     $lname = '';
-            // }
-
-            // $arr = [
-            //     'properties' => [
-            //         [
-            //             'property' => 'firstname',
-            //             'value' => $fname,
-            //         ],
-            //         [
-            //             'property' => 'lastname',
-            //             'value' =>  $lname,
-            //         ],
-            //         [
-            //             'property' => 'phone',
-            //             'value' =>  $request->phone,
-            //         ],
-            //         [
-            //             'property' => 'email',
-            //             'value' =>  $request->email,
-            //         ],
-            //         [
-            //             'property' => 'jobtitle',
-            //             'value' => isset($request->jobtitle)?$request->jobtitle:''
-            //         ],
-            //     ]
-            // ];
-
-        // $hubspot = \HubSpot\Factory::createWithAccessToken(config('settings.env.HUBSPOT_API_KEY'));
-        // $contactInput = new \HubSpot\Client\Crm\Contacts\Model\SimplePublicObjectInput();
-        // $contactInput->setProperties([
-        //     'email' => $request->email
-        // ]);
-        // $filter = new \HubSpot\Client\Crm\Contacts\Model\Filter();
-        // $filter
-        //     ->setOperator('EQ')
-        //     ->setPropertyName('email')
-        //     ->setValue($request->email);
-        
-        // $filterGroup = new \HubSpot\Client\Crm\Contacts\Model\FilterGroup();
-        // $filterGroup->setFilters([$filter]);
-        
-        // $searchRequest = new \HubSpot\Client\Crm\Contacts\Model\PublicObjectSearchRequest();
-        // $searchRequest->setFilterGroups([$filterGroup]);
-        
-        // // @var CollectionResponseWithTotalSimplePublicObject $contactsPage
-        // $contactsPage = $hubspot->crm()->contacts()->searchApi()->doSearch($searchRequest);
-        // // dd($contactsPage);
-        // if($contactsPage['total'] === 0)
-        // {
-        //     $contact = $hubspot->crm()->contacts()->basicApi()->create($contactInput);
-            
-        //     $data = array('subscribe' => 1,'name'=>$request->first_name, 'email'=>$request->email, 'vid'=>$contact['id']);
-
-        //     Mail::send('front-user.email.newsletter-subscribed', ['data'=>$data], function($message) use ($data){
-        //                 $message->to( $data['email']);
-        //                 $message->subject(config('app.name')." - Newsletter subscribed successfully");
-        //             });
-
-        // $user =  Auth::user();
-
-        // $user->vid = $contact['id'];
-        // $user->save();
-        $request->name =  $request->first_name .' '. $request->last_name;
-        if($request->name!='')
-        {
-            $name = explode(' ', $request->name);
-            $fname = $name[0];
-            if(isset($name[1]))
-                $lname = $name[1];
-            else
-                $lname = '';
-        }
-        else
-        {
-            $fname = '';
-            $lname = '';
-        }
-
-        if (Newsletter::isSubscribed($request->email) == false) {
-            Newsletter::subscribeOrUpdate($request->email,['FNAME'=>$fname, 'LNAME'=>$lname]);
-            if(Auth::user()->user_type == 'buyer')
-            {
-                $type = ['Buyer'];
-            }elseif(Auth::user()->user_type == 'shipper'){
-                $type = ['Shipper'];
-            }else{
-                $type = ['Seller'];
-            }
-            
-            Newsletter::addTags($type, $request->email);
-            $data = array('subscribe' => 1,'name'=>$request->name, 'email'=>$request->email, 'subscribe'=>1);
-
-            Mail::send('front-user.email.newsletter-subscribed', ['data'=>$data], function($message) use ($data){
-                $message->to( $data['email']);
-                $message->subject(config('app.name')." - Newsletter subscribed successfully");
-            });
-            
-            return $msg = 'Newsletter subscribed successfully.';
-        }
-        else
-        {
-            return  $msg = 'Newsletter already subscribed.';
-        }
-    }
-
-    public function unsubscribeNewsletter($email)
-    {
-
-        // $email = base64_decode($email);
-        // $vid = base64_decode($vid);
-       
-        // $hubspot = \HubSpot\Factory::createWithAccessToken(config('settings.env.HUBSPOT_API_KEY'));
-        // $hubspot->crm()->contacts()->basicApi()->archive($vid);
-
-        // $data = array('unsubscribe' => 1,'email'=>$email);
-
-        // $user = User::whereEmail($email)->first();
-        // $user->is_newsletter_subscribe = false;
-        // $user->save();
-        
-        // Mail::send('front-user.email.newsletter-subscribed', ['data'=>$data], function($message) use ($data){
-        //     $message->to( $data['email']);
-        //     $message->subject("Newsletter unsubscribed successfully");
-        // });
-
-        // $email = base64_decode($email);
-        if ( Newsletter::isSubscribed($email) ) {
-            Newsletter::unsubscribe($email);
-        }
-        $data = array('unsubscribe' => 1,'email'=>$email);
-
-        Mail::send('front-user.email.newsletter-subscribed', ['data'=>$data], function($message) use ($data){
-            $message->to( $data['email']);
-            $message->subject(config('app.name')." - Newsletter unsubscribed successfully");
-        });
-
-        return $msg = 'You have successfully unsubscribed.';
-    }
+   
     public function notifications($value='')
     {
         DB::table('notifications')->where('read_at', NULL)->where('notifiable_id', Auth::id())->update(['read_at' => Date('Y-m-d H:i:s')]);

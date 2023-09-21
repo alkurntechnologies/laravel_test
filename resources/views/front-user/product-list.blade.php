@@ -70,14 +70,16 @@
                                         <i class="fi fi-sr-star"></i>
                                         <i class="fi fi-sr-star"></i>
                                         <i class="fi fi-sr-star"></i>
-                                    </div>
-                                    
-                                    <div class="btnDiv">                                
-                                        <a href="javascript:void(0)" onclick="addToCart({{$row->id}});" class="cartBtns">
-                                            <span id="removeCart{{$row->id}}" style={{$style}} > Remove from cart </span>
-                                            <span id="cart{{$row->id}}" style={{$nstyle}} > Add to cart </span>
-                                        </a>                                        
-                                    </div>
+
+                                </div>
+                                
+                                <div class="btnDiv">
+                                    @if(Auth::check())
+                                    <a href="javascript:void(0)" onclick="addToCart({{$row->id}});" class="cartBtns">
+                                        <span id="removeCart{{$row->id}}" style={{$style}} > Remove from cart </span>
+                                        <span id="cart{{$row->id}}" style={{$nstyle}} > Add to cart </span>
+                                    </a>
+                                    @endif
                                 </div>
                             </div>
                         </div>

@@ -44,7 +44,7 @@ class OrderPlacedCustomer extends Notification
     {
 
         $mail =  (new MailMessage)
-            ->greeting('Hello ' . ucfirst($this->order->user->first_name) . ' ' . ucfirst($this->order->user->last_name).',')
+            ->greeting('Hello ' . ucfirst($this->order->user->name).',')
             ->subject(config('app.name').' - Order Placed Successfully')
            ->line('Your order is successfully placed on '. config('app.name'))
            ->line('Below are your order details:');
