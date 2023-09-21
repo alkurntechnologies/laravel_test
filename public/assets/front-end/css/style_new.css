@@ -2729,7 +2729,7 @@ header .select2-container--default span.select2-selection span.select2-selection
     background: #FFFFFF;
     border-radius: 4px;
     display: flex;
-    padding: 20px;
+    padding: 13px;
     flex-direction: column;
     margin-bottom: 0;
     position: relative;
@@ -7199,7 +7199,7 @@ i.fas.fa-question-circle.passVel:hover:after {
 
 .productShow .count-box-second {
     width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 13px;
 }
 
 .productShow .ContentContentSecond {
@@ -8164,7 +8164,7 @@ span#select2-category-qu-container:focus {
     height: 100%;
 }
 .TotalProduct {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: 0px;
     text-transform: none;
@@ -9719,7 +9719,7 @@ h3.product-name {
     line-height: normal;
     display: flex;
     align-items: center;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 800;
     margin: 7px 0 0;
     line-height: normal;

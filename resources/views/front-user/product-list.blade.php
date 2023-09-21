@@ -39,7 +39,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex">
                         <div class="productShow">
                             <div class="count-box-second">
-                                <a href="{{url('product-detail/'.$row->id)}}">
+                                
                                     <div class="ContentImageSecond">
                                         @if($row->images)
                                             
@@ -56,7 +56,7 @@
                                         <img loading="lazy" src="{{ asset('/') }}assets/front-end/images/trainImage.jpg" width="60" onerror="this.onerror=null;this.src='{{ asset('/') }}assets/front-end/images/trainImage.jpg'">
                                         @endif
                                     </div>
-                                </a>
+                               
                             
                                 <div class="ContentContentSecond">
                                     <h3 class="product-name">{{$row->name}}</h3>
