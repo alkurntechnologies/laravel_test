@@ -88,8 +88,6 @@ class RegisterController extends Controller
         // save the user to the database
         $user = User::create($formData);
 
-        $user->assignRole('user');
-
          // return a view 
         return redirect('/login')->with('success', 'Registration successful!');
     }

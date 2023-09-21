@@ -112,7 +112,7 @@ class CartController extends Controller
 
     public function orderSummary($id = null)
     {
-        $cartDetails = CartDetail::whereUser(Auth::id())->get();
+        $cartDetails = CartDetail::whereUserId(Auth::id())->get();
         \Stripe\Stripe::setApiKey(config('settings.env.STRIPE_SECRET'));
         $customer = \Stripe\Customer::create();
         $customer_id = $customer->id;

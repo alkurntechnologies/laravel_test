@@ -26,11 +26,7 @@ class RolesTableSeeder extends Seeder
         Role::create([
             'name' => 'B2B Customer'
         ]);
-        
-        Role::create([
-            'name' => 'User'
-        ]);
-
+     
         Role::create([
             'name' => 'Sub Admin'
         ]);

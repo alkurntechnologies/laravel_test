@@ -82,9 +82,9 @@
             
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="form-group">
-                            <label>Product Price</label>
+                            <label><span class="text-danger">*</span>Product Price</label>
                             <input type="number" placeholder="Enter Product Price" class="form-control" name="price"
-                                data-parsley-required-message="Please enter price." value="{{@$row->price}}">
+                            required="" data-parsley-required-message="Please enter price." value="{{@$row->price}}">
                         </div>
                     </div>
                   

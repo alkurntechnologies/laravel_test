@@ -70,7 +70,6 @@ class LoginController extends Controller
                     
                     Auth::login($user);
                     Auth::user()->save();
-                    Auth::user()->assignRole('user');
 
                     return redirect('/')->with('logged in successfully');
                   }
