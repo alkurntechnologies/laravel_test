@@ -44,8 +44,8 @@ Route::get('/password/reset/{token}', function ($token) {
 Route::post('/password/reset/{token}', 'Auth\LoginController@updateForgotPassword');
 
 //social login
-Route::get('login/{provider?}', 'Auth\RegisterController@redirectToProvider');
-Route::get('callback/{provider}', 'Auth\RegisterController@handleProviderCallback');
+// Route::get('login/{provider?}', 'Auth\RegisterController@redirectToProvider');
+// Route::get('callback/{provider}', 'Auth\RegisterController@handleProviderCallback');
 
 Route::post('/add-to-cart', 'CartController@addToCart');
 Route::post('/update-cart', 'CartController@updateCart');

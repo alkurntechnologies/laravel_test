@@ -35,20 +35,6 @@
                     <a href="{{url('')}}" class="logo d-flex align-items-center">
                         <img loading="lazy" src="{{ asset('/') }}assets/front-end/images/new-logo-black.png" alt="">
                     </a>
-                    <ul class="downloadlink">
-                        <li>
-                            <a href="{{ asset('/') }}assets/front-end/images/freight-class-chart-density-table.jpg" download>Download Freight Class Chart</a>
-                        </li>
-                        <li>
-                            <a href="{{ asset('/') }}assets/front-end/images/nmfc-chart-nmfc-railway-codes.docx" download>Download NMFC Chart</a>
-                        </li>
-                        <li>
-                            <a href="{{ asset('/') }}assets/front-end/images/E-Railspot-Get-Started R1.pdf" download>Download About E-Railspot</a>
-                        </li>
-                        <li>
-                            <a href="{{ asset('/') }}assets/front-end/images/Certificate.pdf" download>Download VBE Certification</a>
-                        </li>
-                    </ul>
                 </div>
 
                 <div class="col-lg-8 col-12 footer-links">
@@ -58,10 +44,7 @@
                         <div class="col-md-3 col-6">
                             <ul>
                                 <li class="{{url('')==url()->current()?'active':''}}"><a href="{{url('')}}">Home</a></li>
-                                <li class="{{url('about')==url()->current()?'active':''}}"><a href="{{url('about')}}">About us</a></li>
-                                <li class="{{url('product-spot/product_spot')==url()->current()?'active':''}}"><a href="{{url('product-spot/product_spot')}}">Shop</a></li>
-                                <li class="{{url('how-it-works')==url()->current()?'active':''}}"><a href="{{url('how-it-works')}}">How it works</a></li>
-                                <li class="{{url('contact')==url()->current()?'active':''}}"><a href="{{url('contact')}}">Contact us</a></li>
+                                <li class="{{url('product-list')==url()->current()?'active':''}}"><a href="{{url('product-list')}}">Shop</a></li>
                             </ul>
                         </div>
                         @if(!Auth::check())
